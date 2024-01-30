@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <title>Planet Architecture Panel v0.0.1</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div class="header">
+    <h1>Planet Architecture Panel v0.0.1</h1>
+</div>
+<div class="container">
+    <div class="form-section">
+        <form id="planetForm">
+            <div class="form-group">
+                <label for="planetName">Planet Name:</label>
+                <input type="text" id="planetName" name="planetName" required>
+            </div>
+
+            <div class="form-group">
+                <label for="planetRadius">Radius (in km):</label>
+                <input type="number" id="planetRadius" name="planetRadius" required min="0" step="any">
+            </div>
+
+            <div class="form-group">
+                <label for="lifeExistence">Life Exists:</label>
+                <input type="checkbox" id="lifeExistence" name="lifeExistence">
+            </div>
+
+            <div class="form-group">
+                <button type="submit">Update Planet</button>
+            </div>
+
+            <div id="formError" class="form-error"></div>
+        </form>
+    </div>
+    <div class="display-section">
+        <div id="planetDisplay"></div>
+        <table id="planetInfo">
+        </table>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
